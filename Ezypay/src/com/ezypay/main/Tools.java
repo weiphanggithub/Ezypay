@@ -66,6 +66,7 @@ public class Tools {
 			range.add(result);
 			calendar.add(Calendar.DATE, 1);
 		}
+		range.add(endCalendar.getTime());
 		return range;
 	}
 

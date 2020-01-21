@@ -144,7 +144,7 @@ export default {
       body += '"end":' + '"' + end + '"';
       body += "}";
 
-      const insert = 'http://localhost:21001/insert';
+      const insert = 'http://weiphang.com/insert';
 
       axios.post(insert,body)
       .then(function (response) {
@@ -172,7 +172,7 @@ export default {
       }
     },
     display(){
-      const url = 'http://localhost:21001/display';
+      const url = 'http://weiphang.com/display';
         axios.post(url)
         .then(function (response) {
           document.getElementById("list").innerHTML = response.data;
@@ -182,7 +182,7 @@ export default {
       });
     },
     clear(){
-      const url = 'http://localhost:21001/clear';
+      const url = 'http://weiphang.com/clear';
         axios.post(url)
         .then(function (response) {
           alert(response.data);
